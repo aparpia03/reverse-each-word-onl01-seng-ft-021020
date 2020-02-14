@@ -5,3 +5,12 @@ def reverse_each_word(sentence)
   end 
  empty_array.join(" ")
 end  
+
+
+def reverse_each_word(sentence)
+  empty_array = []
+  sentence.split(" ").collect do |word|
+    empty_array.push(word.reverse)
+  end
+  empty_array.join(" ")
+end 
