@@ -1,8 +1,9 @@
 def reverse_each_word(sentence)
   empty_array = [] # create an empty array 
   sentence.split(" , ").each do |word| #split string into array and interate
-    empty_array.reverse(word) #push the reversed word into the new array
-    empty_array.join(" ")
+    word.reverse #reverse the word so for example Hello becomes olleH
+    empty_array.push(word)# push that word into the empty_array
+    empty_array.join(" , ")# now join it back into one string sentence
   end 
-  empty_array # then join them back into one string
+ 
 end  
